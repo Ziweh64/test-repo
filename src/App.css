@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.mainContainer {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: linear-gradient(79deg, #7439db, #c66fbc 48%, #f744df);
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .Container {
+    border: 2px solid #d3d3d3;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px #d3d3d3;
+    width: 300px;
+    margin: auto;
+    background-color: white; /* Add a background color to the container */
   }
-  to {
-    transform: rotate(360deg);
+  
+  .titleContainer {
+    display: flex;
+    flex-direction: column;
+    font-size: 32px; /* Adjusted font size */
+    font-weight: bolder;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px; /* Adjusted margin */
   }
-}
+  
+  .inputContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centered the input elements */
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  
+  .inputContainer > .errorLabel {
+    color: red;
+    font-size: 12px;
+    margin-bottom: 10px; /* Adjusted margin */
+  }
+  
+  .inputBox {
+    height: 48px;
+    width: 100%; /* Takes the full width */
+    font-size: large;
+    border-radius: 8px;
+    border: 1px solid grey;
+    padding: 0 8px; /* Adjusted padding */
+  }
+  
+  .text-center {
+    margin-top: 10x;
+    color: whitesmoke;
+    text-decoration: dashed;
+  }
+  
+  .rememberForgotContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Align and space between the elements */
+    margin-top: 20px; /* Adjusted margin */
+  }
+  
+  .rememberMeText {
+    font-size: 14px;
+    margin-right: 12px; /* Adjusted font size */
+  }
+  
+  .inputButton {
+    width: 100%;
+    margin-top: 15px; /* Adjusted margin */
+  }
